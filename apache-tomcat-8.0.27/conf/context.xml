@@ -16,7 +16,8 @@
   limitations under the License.
 -->
 <!-- The contents of this file will be loaded for each web application -->
-<Context>
+<Context reloadable="true">
+	<Resource name="jdbc/TicketDistribution" auth="Container" type="javax.sql.DataSource" maxActive="20" username="admin" password="pass" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" url="jdbc:sqlserver://REDONRIH2\SQLEXPRESS:1433" />
 
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
